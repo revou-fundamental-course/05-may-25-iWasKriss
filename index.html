@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="./logo.png" alt="logo" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ourpackage">Our Package</a></li>
+            <li><a href="#callus">Call Us</a></li>
+        </ul>
+    </nav>
+    <hr width="100%" size="2">
+    <div id="home"></div>
+    <div class="cont_main">
+        <h1>Your Trusted Travel Agent's</h1>
+        <p style="margin-bottom: 50px;">Your happiness is our happiness</p>
+
+
+         <section class="cont_slider_form" style="display: flex;">
+                    <!-- Testimonial Section -->
+            <div class="testimonial">
+                <swiper-container
+                class="mySwiper"
+                pagination="true"
+                pagination-clickable="true"
+                navigation="true"
+                space-between="30"
+                centered-slides="true"
+                autoplay-delay="5000"
+                autoplay-disable-on-interaction="false"
+                >
+                <swiper-slide>
+                    <img src="./bali.jpg" alt="Scenic view of Bali">
+            
+                    <i class="testimonial-quote">
+                    "Liburanku jadi sangat menyenangkan bersama travel ini"
+                    </i>
+            
+                    <div class="testimonial-user" style="margin-bottom: 40px;">
+                    <img src="./profile1.jpg" alt="User profile" class="user-avatar">
+                    <ul class="user-info">
+                        <li><strong>Justin Oxaldy</strong></li>
+                        <li><small class="user-description">Bapak Rumah Tangga, 32</small></li>
+                    </ul>
+                    </div>
+                </swiper-slide>
+            
+                <!-- Placeholder Slides -->
+                <swiper-slide><img src="./bali.jpg" alt="Scenic view of Bali">
+            
+                    <i class="testimonial-quote">
+                    "Liburanku jadi sangat menyenangkan bersama travel ini"
+                    </i>
+            
+                    <div class="testimonial-user" style="margin-bottom: 40px;">
+                    <img src="./profile1.jpg" alt="User profile" class="user-avatar">
+                    <ul class="user-info">
+                        <li><strong>Justin Oxaldy</strong></li>
+                        <li><small class="user-description">Bapak Rumah Tangga, 32</small></li>
+                    </ul>
+                    </div></swiper-slide>
+                <swiper-slide><img src="./bali.jpg" alt="Scenic view of Bali">
+            
+                    <i class="testimonial-quote">
+                    "Liburanku jadi sangat menyenangkan bersama travel ini"
+                    </i>
+            
+                    <div class="testimonial-user" style="margin-bottom: 40px;">
+                    <img src="./profile1.jpg" alt="User profile" class="user-avatar">
+                    <ul class="user-info">
+                        <li><strong>Justin Oxaldy</strong></li>
+                        <li><small class="user-description">Bapak Rumah Tangga, 32</small></li>
+                    </ul>
+                    </div></swiper-slide>
+                <swiper-slide><img src="./bali.jpg" alt="Scenic view of Bali">
+            
+                    <i class="testimonial-quote">
+                    "Liburanku jadi sangat menyenangkan bersama travel ini"
+                    </i>
+            
+                    <div class="testimonial-user" style="margin-bottom: 40px;">
+                    <img src="./profile1.jpg" alt="User profile" class="user-avatar">
+                    <ul class="user-info">
+                        <li><strong>Justin Oxaldy</strong></li>
+                        <li><small class="user-description">Bapak Rumah Tangga, 32</small></li>
+                    </ul>
+                    </div></swiper-slide>
+                </swiper-container>
+
+                <section class="benefits" style="margin-top: 20px;">
+                    <h2>Kami menawarkan pengalaman berlibur terbaik bagi anda</h2>
+                    <div class="cont_card">
+                        <div class="card">
+                            <div class="card-body">
+                            <h3 class="card-title">Aman, Cepat, Dimana saja & Kapan saja</h3>
+                            <p class="card-text">Card description here.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                            <h3 class="card-title">Kami siap melayani anda kapan saja</h3>
+                            <p class="card-text">Card description here.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                            <h3 class="card-title">Promo menarik setiap harinya</h3>
+                            <p class="card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                            <h3 class="card-title">Selalu di samping anda</h3>
+                            <p class="card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        </div>
+                </section>
+            </div>
+           
+            <div>
+                <div class="form-container">
+                    <h2>Contact Us</h2>
+                    <p style="margin-bottom: 70px;">Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                  
+                    <form id="contactForm">
+                        <div id="formError" class="error" style="margin-bottom: 10px;"></div>
+                      
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="First and last name">
+                        <div class="error" id="nameError"></div>
+                      
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com">
+                        <div class="error" id="emailError"></div>
+                      
+                        <label for="interest">What are you interested in?</label>
+                        <select id="interest" name="interest">
+                          <option value="">Select option</option>
+                          <option value="product">Product Info</option>
+                          <option value="support">Customer Support</option>
+                          <option value="partnership">Partnership</option>
+                          <option value="careers">Careers</option>
+                          <option value="other">Other</option>
+                        </select>
+                        <div class="error" id="interestError"></div>
+                        <button type="submit" id="submitBtn" disabled>SEND</button>
+                      </form>    
+            </div>
+        </section>
+        
+        <div id="ourpackage" class="our_package_title">
+            <h1>Our Package</h1>
+        </div>
+        <section class="our_package" style="margin-bottom: 50px;">
+            <div class="cont_pack_card">
+                        <div class="pack_card">
+                            <img src="./bali.jpg" alt="">
+                            <div class="pack_card-body">
+                            <h3 class="pack_card-title">Bali</h3>
+                            <p class="pack_card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        <div class="pack_card">
+                            <img src="./bali.jpg" alt="">
+                            <div class="pack_card-body">
+                            <h3 class="pack_card-title">Bali</h3>
+                            <p class="pack_card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        <div class="pack_card">
+                            <img src="./bali.jpg" alt="">
+                            <div class="pack_card-body">
+                            <h3 class="pack_card-title">Bali</h3>
+                            <p class="pack_card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        <div class="pack_card">
+                            <img src="./bali.jpg" alt="">
+                            <div class="pack_card-body">
+                            <h3 class="pack_card-title">Bali</h3>
+                            <p class="pack_card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        <div class="pack_card">
+                            <img src="./bali.jpg" alt="">
+                            <div class="pack_card-body">
+                            <h3 class="pack_card-title">Bali</h3>
+                            <p class="pack_card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        <div class="pack_card">
+                            <img src="./bali.jpg" alt="">
+                            <div class="pack_card-body">
+                            <h3 class="pack_card-title">Bali</h3>
+                            <p class="pack_card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        <div class="pack_card">
+                            <img src="./bali.jpg" alt="">
+                            <div class="pack_card-body">
+                            <h3 class="pack_card-title">Bali</h3>
+                            <p class="pack_card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        <div class="pack_card">
+                            <img src="./bali.jpg" alt="">
+                            <div class="pack_card-body">
+                            <h3 class="pack_card-title">Bali</h3>
+                            <p class="pack_card-text">Card description here.</p>
+                            </div>
+                        </div>
+                        </div>
+        </section>
+
+           <hr width="100%" size="2">
+           
+           <footer>
+            <h1>Happy Reserving, Enjoy Traveling </h1>
+            <p>Follow us on social media</p>
+            <button class="cta-button">Call to Action</button>
+           </footer>
+    </div>
+    
+    
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+
+</html>
